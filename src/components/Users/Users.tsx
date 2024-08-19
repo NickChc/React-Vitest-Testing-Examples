@@ -14,12 +14,11 @@ export function Users() {
   async function getUsers() {
     setError(null);
     try {
-      const res = await axios.get("https://dummyjson.com/users?limit=10");
-      console.log(res.data);
+      const res = await axios.get("https://dummyjson.com/users");
       setUsers(res.data.users);
     } catch (err: any) {
-      setError(err.message);
       console.log(err.message);
+      setError("Error fetching users");
     }
   }
 
