@@ -12,3 +12,13 @@ body {
 button {
   cursor: pointer;
 }
+
+.destructive-text {
+  color: crimson;
+}
+
+.destructive {
+  border-color: crimson;
+  outline-color: crimson;
+  color: crimson;
+}
